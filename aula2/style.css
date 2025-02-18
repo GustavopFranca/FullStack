@@ -1,0 +1,24 @@
+p{
+    color: purple;
+}
+
+h1{
+    font-size: smaller;
+}
+
+#p_1{
+    color: turquoise;
+}
+
+.p_a{
+    color: yellow;
+}
+
+div p{
+    color:gold;
+}
+
+#p_2:hover{
+    color:darkslateblue
+
+}
