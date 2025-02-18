@@ -1,0 +1,29 @@
+.div_fundo{
+    background-color: #d0e3ff;
+}
+/* EU */
+.div_eu h1{
+
+    text-align: center;
+    background-color: #334eac ;
+    color: #f2f0de;
+}
+
+.div_eu img{
+   display: block;
+   margin-left: auto ;
+   margin-right: auto;
+}
+
+/* Sobre Mim*/
+
+.div_sobre h1{
+    text-align: center;
+    font-style: italic;
+}
+
+
+.div_sobre p{
+    text-align:justify;
+}
+
