@@ -1,6 +1,6 @@
 /*Fundo*/
 .fundo {
-    background-color: rgb(123, 135, 160);
+    background: linear-gradient(to right, #A4e9ff, #caebec);
     margin: 0;
     padding: 0;
 }
@@ -209,6 +209,49 @@ ul {
 }
 
 .ondemoro iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/*Meu filme*/
+
+.Filme h3{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: initial;
+
+}
+
+.Filme iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/*Musica*/
+
+.Musica h3{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: initial;
+}
+
+.Musica iframe{
     display: block;
     margin-left: auto;
     margin-right: auto;
