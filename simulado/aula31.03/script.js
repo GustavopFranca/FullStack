@@ -10,3 +10,5 @@ ctx.strokeStyle = 'red';
 ctx.fillRect(10,10,50,50);
 ctx.strokerect(0,0,70,70);
 ctx.closePath();
+
+//ct
