@@ -6,6 +6,10 @@ body {
     padding: 20px;
     }
     
+    #t{
+        text-align: center;
+    }
+    
     .canvas-container {
     display: flex;
     flex-direction: column;
