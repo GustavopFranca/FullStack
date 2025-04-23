@@ -1,63 +1,91 @@
 <!DOCTYPE html>
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Twiinkd</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Twiinkd</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=League+Gothic&display=swap"
+    rel="stylesheet"
+  />
 </head>
 
 <body>
-    <header>
-        <img src="../SIte twiinkd/img/Logo Twiinkd .png" alt="Logo">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Fale Conosco</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <img src="img/Logo Twiinkd .png" alt="Logo" />
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./servico.html">Serviços</a></li>
+        <li><a href="./fale-conosco.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section>
-        <div class="list">
-            <div class="item">
-                <div class="serv-img">
-                    <img src="../SIte twiinkd/img/AssistenteIA.jpg" alt="Assistente IA">
-
-                </div>
-                <div class="content">
-                    <p class="serv-information">
-                        Descrição do Serviços
-                    </p>
-                    <h2>
-                        Assistente IA
-                    </h2>
-                    <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, impedit nam. Eius repudiandae temporibus, facere minus amet animi est expedita doloribus maxime! Deserunt mollitia, quisquam hic iusto harum culpa accusantium?
-                    </p>
-                    <button class="information">
-                        Saiba Mais
-                    </button>
-                </div>
-            </div>
-
+  <section class="container">
+    <div class="list">
+      <div class="item active">
+        <div class="serv-img">
+          <img src="img/AssistenteIA.jpg" alt="Assistente IA" />
         </div>
-
-        <div class="arrows">
-            <button><img src="../SIte twiinkd/img/arrow.png" alt="seta esquerda"></button>
-            <button><img src="../SIte twiinkd/img/arrow.png" alt="seta direta"></button>
-            
+        <div class="content">
+          <p class="serv-information">Descrição do Serviço</p>
+          <h2>Assistente IA</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, impedit nam.
+          </p>
+          <button class="information">Saiba Mais</button>
         </div>
+      </div>
 
-        <div class="indications">
-            <div class="number">01</div>
-            <ul>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-            </ul>
+      <div class="item">
+        <div class="serv-img">
+          <img src="img/Automação.jpg" alt="Automação" />
         </div>
-    </section>
+        <div class="content">
+          <p class="serv-information">Descrição do Serviço</p>
+          <h2>Automação</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, impedit nam.
+          </p>
+          <button class="information">Saiba Mais</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="serv-img">
+          <img src="img/Site.jpg" alt="Site" />
+        </div>
+        <div class="content">
+          <p class="serv-information">Descrição do Serviço</p>
+          <h2>Site</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, impedit nam.
+          </p>
+          <button class="information">Saiba Mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrows">
+      <button id="prev"><img src="img/arrows.svg" alt="Seta Esquerda" /></button>
+      <button id="next"><img src="img/arrows.svg" alt="Seta Direita" /></button>
+    </div>
+
+    <div class="indications">
+      <div class="number">01</div>
+      <ul>
+
+
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
-
 </html>

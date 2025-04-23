@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fale Conosco - Twiinkd</title>
+  <link rel="stylesheet" href="fale-conosco.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="../SIte twiinkd/img/Logo Twiinkd .png" alt="Logo Twiinkd">
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./servico.html">Serviços</a></li>
+        <li><a href="./fale-conosco.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="fale-conosco-container">
+    <h1>Fale Conosco</h1>
+    <form action="enviarMensagem.php" method="POST" id="contatoForm">
+      <div class="input-container">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="input-container">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-container">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="social-links">
+      <p>Ou entre em contato conosco pelas redes sociais:</p>
+      <a href="https://www.instagram.com/twiinkd/" target="_blank">Instagram</a>
+      <a href="https://wa.me/seunumerodetelefone" target="_blank">WhatsApp</a>
+    </div>
+  </main>
+
+  <script src="faleconosco.js"></script>
+</body>
+</html>

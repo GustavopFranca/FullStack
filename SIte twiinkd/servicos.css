@@ -1,0 +1,108 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 90vw;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  gap: 10%;
+  align-items: center;
+  z-index: 10;
+  padding: 10px 0;
+  background-color: #000;
+}
+
+header img {
+  width: 150px;
+}
+
+header nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main.servicos-container {
+  padding: 160px 10vw 40px;
+}
+
+main h1 {
+  font-size: 3rem;
+  font-family: 'League Gothic', sans-serif;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #67E0F4;
+}
+
+.servico {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+  align-items: center;
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
+}
+
+.servico:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.servico img {
+  width: 300px;
+  border-radius: 12px;
+  border: 1px solid #67E0F4;
+}
+
+.servico h2 {
+  font-family: 'League Gothic', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #67E0F4;
+}
+
+.servico p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.servico ul {
+  padding-left: 20px;
+}
+
+.servico ul li {
+  margin-bottom: 5px;
+  list-style: disc;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
