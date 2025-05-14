@@ -1,25 +1,14 @@
-// Definir o índice inicial da imagem
-let currentIndex = 0;
-
-// Selecionar todas as imagens dentro do carrossel
-const images = document.querySelectorAll('.carousel img');
-
-// Obter o total de imagens
-const totalImages = images.length;
-
-// Função para mover o carrossel
-function moveCarousel(step) {
-  // Atualizar o índice com base no passo (1 para próxima imagem, -1 para a anterior)
-  currentIndex += step;
-
-  // Garantir que o índice fique dentro do intervalo das imagens
-  if (currentIndex >= totalImages) {
-    currentIndex = 0; // Volta à primeira imagem
-  } else if (currentIndex < 0) {
-    currentIndex = totalImages - 1; // Volta à última imagem
+// Função para exibir o botão de rolar para o topo
+window.onscroll = function() {
+  var scrollTopBtn = document.getElementById('scrollTopBtn');
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
   }
+};
 
-  // Mover a galeria de imagens para a nova posição
-  const carousel = document.querySelector('.carousel');
-  carousel.style.transform = `translateX(-${currentIndex * 100}%)`; // Faz o slide
-}
+// Função para rolar a página para o topo
+document.getElementById('scrollTopBtn').addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});

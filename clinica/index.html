@@ -2,47 +2,61 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Entre Patas e Focinhos</title>
-  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-logo">
-          <img src="Logo entre patas.jpg" alt="Entre Patas e Focinhos" class="logo left">
-          <h1 class="welcome-text">Bem-vindo à Entre Patas e Focinhos</h1>
-          <img src="Logo entre patas.jpg" alt="Entre Patas e Focinhos" class="logo right">
-        </div>
-        
-        <nav>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre Nós</a></li>
-            <li><a href="local.html">Localização</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.png" alt="Entre Patas e Focinhos" class="logo">
+      <h1 class="welcome-text">Bem-vindo à Entre Patas e Focinhos</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main>
-    
-      <section class="about">
-        <h2>Entre Patas e Focinhos: excelência em saúde animal com atendimento especializado</h2>
-        <p>
-          Na Entre Patas e Focinhos, oferecemos diagnósticos precisos, tratamentos modernos e uma equipe qualificada para garantir o bem-estar do seu pet. Conheça nossos serviços e descubra como podemos ajudar seu melhor amigo a viver com mais saúde e qualidade de vida.
-        </p>
-      </section>
+    <section id="inicio">
+      <h2>Seu pet merece o melhor cuidado!</h2>
+      <p>Produtos e serviços especializados para o seu amigo de quatro patas.</p>
     </section>
-    <section class="centered-image">
-      <img src="animal.png.jpeg" alt="Imagem centralizada">
+
+    <section id="produtos">
+      <h2>Produtos Populares</h2>
+      <div class="product-container">
+        <div class="product">
+          <img src="images/pet1.jpg" alt="Produto 1">
+          <p class="product-name">Ração Premium</p>
+          <p class="product-price">R$ 50,00</p>
+        </div>
+        <div class="product">
+          <img src="images/pet2.jpg" alt="Produto 2">
+          <p class="product-name">Brinquedo para Cães</p>
+          <p class="product-price">R$ 30,00</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Fale Conosco</h2>
+      <p>Entre em contato para mais informações sobre nossos produtos e serviços!</p>
+      <a href="https://wa.me/5511950540306" class="whatsapp-link" target="_blank">
+        <img src="images/whatsapp.png" alt="WhatsApp">
+      </a>
+    </section>
   </main>
 
-    <footer>
-      <p>&copy; 2025 Entre Patas e Focinhos | (11) 99710-4994 | (11) 4301-8223 | (11) 3262-1683</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Entre Patas e Focinhos | Todos os direitos reservados</p>
+  </footer>
 
-    <a href="https://wa.me/5511950540306" class="whatsapp-float" target="_blank" title="Fale conosco pelo WhatsApp">
-      <img src="whats.png" alt="WhatsApp">
-    </a>
+  <script src="script.js"></script>
 </body>
 </html>

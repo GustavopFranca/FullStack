@@ -1,315 +1,99 @@
-/* Reset básico */
+/* Reset Básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #ffffff;
-    color: #333;
-  }
-  
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #74c0b3;
-    padding: 20px 20px;
-    border-bottom: 2px solid #ddd;
-  }
-  
-  .logo {
-    height: 100px; /* Certifique-se de que o tamanho está ajustado */
-    margin-top: 15px; /* Move os logos um pouco para baixo */
-    border: 3px solid #333; /* Adiciona uma moldura ao redor do logo */
-    border-radius: 8px; /* Deixa os cantos da moldura arredondados */
-  }
-  
-  .header-logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    padding-top: 15px; /* Adiciona um espaçamento superior ao contêiner */
-  }
-  .centered-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   
-  }
-  
-  .centered-image img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border: 5px solid #333; /* Moldura ao redor da imagem */
- 
-  }
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin-top: 10px;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: #007BFF;
-  }
-  
-  .about {
-    text-align: center;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    max-width: 800px;
-  }
-  
-  .about h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  .about p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-  }
-
-
-  
-  .gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-  }
-  
-  .gallery img {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #74c0b3; 
-    border-top: 2px solid #ddd;
-    margin-top: 20px;
-    position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #74c0b3;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .whatsapp-float {
-    position: fixed; /* Mantém o ícone fixo na viewport */
-    bottom: 80px; /* Ajuste para mover o ícone mais para cima */
-    right: 20px; /* Mantém o ícone à direita */
-    width: 70px; /* Tamanho do ícone */
-    height: 70px; /* Tamanho do ícone */
-    z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
-  }
-  
-  .whatsapp-float img {
-    width: 100%; /* Garante que a largura da imagem ocupe todo o botão */
-    height: 100%; /* Garante que a altura da imagem ocupe todo o botão */
-    object-fit: cover; /* Ajusta a imagem para preencher o botão sem distorção */
-    border-radius: 50%; /* Mantém o formato arredondado */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra para destaque */
-  }
-
-
-  /* Estilos para a seção de contato */
-.contato-section {
-  padding: 40px 20px;
-  background-color: #ffffff;
-  max-width: 800px;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
-  color: #333;
-}
-
-.contato-section h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #005b5b;
-  text-align: center;
-}
-
-.contato-section p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.contato-lista {
-  list-style: none;
+  margin: 0;
   padding: 0;
-  margin-bottom: 30px;
-  font-size: 16px;
-  line-height: 1.6;
+  box-sizing: border-box;
 }
 
-.mapa-container iframe {
-  width: 100%;
-  height: 350px;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-
-/*local css */
-
-.servicos-section {
-  padding: 40px 20px;
-  background-color: #ffffff;
-  max-width: 900px;
-  margin: 0 auto;
+body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
   color: #333;
- 
 }
 
-.servicos-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #007a7a;
+header {
+  background-color: #74c0b3;
+  padding: 10px;
   text-align: center;
 }
 
-.servicos-section p {
-  font-size: 16px;
-  margin-bottom: 30px;
-  text-align: center;
+header .logo {
+  max-width: 150px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
   font-weight: bold;
 }
 
-.servicos-lista {
-  list-style: none;
-  padding: 0;
-  font-size: 16px;
-  line-height: 1.8;
+main {
+  padding: 20px;
+  background-color: #fff;
 }
 
-.servicos-lista li {
+h2 {
+  color: #007a7a;
   margin-bottom: 15px;
 }
 
-.servicos-lista li strong {
-  color: #005b5b;
-}
-
-/* Estilos gerais */
-body {
-  font-family: Arial, sans-serif;
-}
-
-.galeria-section {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #ffffff;
-}
-
-.galeria-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #007a7a;
-}
-
-.carousel-container {
-  position: relative;
-  width: 50%;
-  margin: 0 auto;
-  overflow: hidden;
-  height: auto; /* A altura será ajustada automaticamente conforme o conteúdo */
-}
-
-.carousel {
+.product-container {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  gap: 20px;
+  justify-content: center;
 }
 
-.carousel img {
-  width: 30%; /* Diminui a largura das imagens para 30% */
-  height: auto; /* Mantém a proporção das imagens */
-  flex: 0 0 100%;
-  margin: 0 auto;
-}
-
-/* Estilos para as setas */
-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 36px;
-  border: none;
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
   padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-  opacity: 0.5;
+  text-align: center;
+  width: 200px;
 }
 
-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 1;
+.product img {
+  width: 100%;
+  height: auto;
 }
 
-/* Posicionar as setas mais para baixo */
-.prev {
-  left: 220px; /* Ajuste para colocar a seta à direita */
-  top: 200%; /* Move a seta mais para baixo na página */
-  height: 70px; /* Ajusta a altura da seta */
-  width: 70px; /* Ajusta a largura da seta */
-  border-radius: 50%; /* Deixa a seta arredondada */
-  background-color: #007a7a; /* Cor de fundo da seta */
-  color: white; /* Cor do texto da seta */
-  font-size: 24px; /* Tamanho da fonte da seta */
-  display: flex; /* Flexbox para centralizar o texto */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+.product-name {
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-.next {
-  right: 220px; /* Ajuste para colocar a seta à direita */
-  top: 200%; /* Move a seta mais para baixo na página */
-  height: 70px; /* Ajusta a altura da seta */
-  width: 70px; /* Ajusta a largura da seta */
-  border-radius: 70%; /* Deixa a seta arredondada */
-  background-color: #007a7a; /* Cor de fundo da seta */
-  color: white; /* Cor do texto da seta */
-  font-size: 24px; /* Tamanho da fonte da seta */
-  display: flex; /* Flexbox para centralizar o texto */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+.product-price {
+  color: #007a7a;
+  margin-top: 5px;
+}
+
+.whatsapp-link img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: center;
+  background-color: #74c0b3;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 14px;
 }
